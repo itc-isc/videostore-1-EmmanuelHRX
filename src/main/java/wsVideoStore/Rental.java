@@ -14,12 +14,20 @@ public class Rental
     return movie.getTitle();
   }
 
+  public int getPriceCode() {
+    return movie.getPriceCode();
+  }
+
   public double determineAmount() {
     return movie.determineAmount(daysRented);
   }
 
   public int determineFrequentRenterPoints() {
     return movie.determineFrequentRenterPoints(daysRented);
+  }
+
+  public int getDaysRented() {
+    return daysRented;
   }
 
 }

@@ -28,7 +28,7 @@ public class Customer
 			Rental 		each = (Rental)rentals.nextElement ();
 			
 			// determines the amount for each line
-			switch (each.getMovie ().getPriceCode ()) {
+			switch (each.getPriceCode ()) {
 				case Movie.REGULAR:
 					thisAmount += 2;
 					if (each.getDaysRented () > 2)
@@ -46,11 +46,11 @@ public class Customer
 			
 			frequentRenterPoints++;
 			
-			if (each.getMovie ().getPriceCode () == Movie.NEW_RELEASE 
+			if (each.getPriceCode () == Movie.NEW_RELEASE 
 					&& each.getDaysRented () > 1)
 				frequentRenterPoints++;
 				
-			result += "\t" + each.getMovie ().getTitle () + "\t"
+			result += "\t" + each.getTitle () + "\t"
 								+ String.valueOf (thisAmount) + "\n";
 			totalAmount += thisAmount;
 				

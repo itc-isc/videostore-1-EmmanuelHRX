@@ -4,9 +4,9 @@ public abstract class Movie
 {
 	private String title;
 	private int priceCode;
-	private final int REGULAR = 1;
-	private final int NEW_RELEASE = 2;
-	private final int CHILDRENS = 3;
+	protected static final int REGULAR = 1;
+	protected static final int NEW_RELEASE = 2;
+	protected static final int CHILDRENS = 3;
 
 
 	public Movie(String title, int priceCode) {
