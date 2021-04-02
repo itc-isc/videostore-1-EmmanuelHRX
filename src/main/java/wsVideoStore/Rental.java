@@ -1,3 +1,4 @@
+package wsVideoStore;
 
 public class Rental
 {
@@ -20,4 +21,5 @@ public class Rental
   public int determineFrequentRenterPoints() {
     return movie.determineFrequentRenterPoints(daysRented);
   }
+
 }
